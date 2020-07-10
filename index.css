@@ -43,7 +43,7 @@
     grid-template-rows: 1fr 1fr;
     background: #cccccc;
     padding: 10px;
-    height: 200px;
+    height: 250px;
 }
 
 #contenedor h4{
@@ -58,6 +58,8 @@
 #contenedor ul{
     display: flex;
     list-style-type: none;
+    max-width: 400px;
+    
 }
 
 #contenedor ul li{
@@ -69,7 +71,7 @@
     font-size: 20px;
     font-weight: 600;
     text-align: center;
-
+    position: relative;
 }
 
 #contenedor button{
@@ -101,4 +103,25 @@
     font-weight: 600;
     margin: 0px;
    padding-top: 20px;
+}
+
+#contenedor .eliminar{
+    background: red;
+    border-radius: 50%;
+    outline: none;
+    border: 1px solid #666666;
+    box-shadow: 1px 1px 5px rgba(0,0,0,.3);
+    font-size: 8px;
+    font-weight: 600;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    text-align: center;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+#contenedor ul li:hover .eliminar {
+    visibility: visible;
 }
